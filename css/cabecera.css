@@ -1,0 +1,29 @@
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#atras{
+    padding: 10px;
+    color: orangered;
+    cursor: pointer;
+    -webkit-text-stroke: 1px black;
+}
+
+#cabecera > div{
+    margin: 5px;
+}
+
+#titulo{
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#usuario{
+    padding-right: 3em;
+    font-size: 1.2em;
+    font-weight: bold;
+}

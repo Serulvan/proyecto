@@ -1,0 +1,17 @@
+.logo{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    object-fit: scale-down;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#entrar{
+    width: 100%;
+}

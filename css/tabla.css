@@ -1,0 +1,122 @@
+@import 'variables.css';
+.tabla{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla > thead > tr{
+    display: block;
+    width: 100%;
+    background: var(--azul);
+    font-weight: bold;
+    color: white;
+    border: 2px solid var(--azul);
+    border-radius: 5px;
+}
+
+.tabla > thead > tr > td{
+    height: 2.5em;
+}
+
+.tabla .tcuerpo{
+    margin-top: 3px;
+    display: block;
+    max-height: 525px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    border: 3px var(--azul) solid;
+}
+
+.tabla .tcuerpo > tr:nth-child(even){
+    background: #eee;
+}
+
+.tabla-gestion{
+    font-size: 14px
+}
+
+.bloque.bloque-tabla-gestion{
+    overflow-x: auto;
+    padding: 0px;
+    margin: 25px;
+}
+
+.tabla .tcuerpo > tr:hover{
+    background: var(--azul-hover);
+}
+
+.col_login, .col_usuario_gestiona{
+    width: 5em;
+    min-width: 5em;
+    max-width: 5em;
+}
+
+.col_nombre, .col_turno{
+    text-transform: capitalize;
+    width: 6.25em;
+    min-width: 6.25em;
+    max-width: 6.25em;
+}
+
+.col_departamento, .col_categoria{
+    text-transform: capitalize;
+    width: 8.125em;
+    min-width: 8.125em;
+    max-width: 8.125em;
+}
+
+.col_apellidos{
+    text-transform: capitalize;
+    width: 11.25em;
+    min-width: 11.25em;
+    max-width: 11.25em;
+}
+
+.col_fecha_solicitud, .col_fecha_gestion, .col_fecha_antiguedad{
+    width: 11.25em;
+    min-width: 11.25em;
+    max-width: 11.25em;
+}
+
+.col_fecha_ini, .col_fecha_fin, .col_estado{
+    width: 7.5em;
+    min-width: 7.5em;
+    max-width: 7.5em;
+}
+
+.col_degest{
+    width: 1.875em;
+}
+
+.col_compensar{
+    width: 17px;
+}
+
+.cel span.badge{
+    margin: 6px 0;
+}
+
+.cel.estado_CONFIRMADO span.badge, span.badge.CONFIRMADO{
+    color: #fff;
+    background-color: #28a745;
+}
+.cel.estado_RECHAZADO span.badge, span.badge.RECHAZADO{
+    color: #fff;
+    background-color: #bd2130;
+}
+.cel.estado_PENDIENTE span.badge{
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.borrar{
+    margin: 3px 10px;
+}
+
+.btn.btn-square-icon{
+    margin: 3px;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+}
