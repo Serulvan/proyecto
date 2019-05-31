@@ -1,6 +1,6 @@
 <?php
 function conexion(){
-    $serv = filter_input(INPUT_SERVER, "REMOTE_ADDR");
+    $serv = filter_input(INPUT_SERVER, "SERVER_ADDR");
     $usua = "conex";
     $cont = "1234";
     $bbdd = "proyecto";
