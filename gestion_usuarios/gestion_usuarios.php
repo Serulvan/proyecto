@@ -26,7 +26,8 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
         <script src="../js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="../js/moment.min.js" type="text/javascript"></script>
         <script src="../js/cabecera.js" type="text/javascript"></script>
-        <script src="../js/check_box.js" type="text/javascript"></script>
+        <script src="../js/funciones_generales.js" type="text/javascript"></script>
+        <script src="js/gestion_usuarios.js" type="text/javascript"></script>
 
         <!--<link href="../css/00_marcos.css" rel="stylesheet" type="text/css"/>-->
     </head>
@@ -48,53 +49,52 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
             </div>
         </div>
         <div class="separador_horizontal"></div><!------------------------------------------------------------------->
-        <div class="bloque">
+        <div class="bloque" id="form_gest_usu">
             <div class="controles">
                 <div class="c_elemento">
                     <label for="login">Login.</label>
-                    <input type="text" id="login" class="form-control"></input>
+                    <input type="text" id="login" class="form-control login"/>
                 </div>
                 <div class="c_elemento">
                     <label for="nombre">Nombre.</label>
-                    <input type="text" id="nombre" class="form-control"></input>
+                    <input type="text" id="nombre" class="form-control nombre"/>
                 </div>
                 <div class="c_elemento">
                     <label for="apellidos">Apellidos.</label>
-                    <input type="text" id="apellidos" class="form-control"></input>
+                    <input type="text" id="apellidos" class="form-control apellidos"/>
                 </div>
                 <div class="c_elemento">
                     <label for="categoria">Categoría.</label>
-                    <select id="categoria" class="selectpicker"></select>
+                    <input id="categoria" class="form-control categoria"/>
                 </div>
                 <div class="c_elemento">
                     <label for="departamento">Departamento.</label>
-                    <input type="text" id="departamento" class="form-control"></input>
+                    <input type="text" id="departamento" class="form-control departamento"/>
                 </div>
                 <div class="c_elemento">
                     <label for="fecha_ant">Fecha de Antigüedad.</label>
-                    <input type="date" id="fecha_ant" class="form-control"></input>
+                    <input type="date" id="fecha_ant" class="form-control fecha_ant"/>
                 </div>
                 <div class="c_elemento">
                     <label for="turno">Turno.</label>
-                    <select type="text" id="turno" class="selectpicker"></select>
+                    <input type="text" id="turno" class="form-control turno"/>
+                </div>
+                <div class="c_elemento">
+                    <div class="custom-checkbox custom-control">
+                        <input type="checkbox" id="ins_vac" class="custom-control-input ins_vac"/>
+                        <label for="ins_vac" class="custom-control-label">Insertar Vacaciones.</label>
+                    </div>
+                    <div class="custom-checkbox custom-control">
+                        <input type="checkbox" id="ges_vac" class="custom-control-input ges_vac"/>
+                        <label for="ges_vac" class="custom-control-label">Gestionar Vacaciones.</label>
+                    </div>
+                    <div class="custom-checkbox custom-control">
+                        <input type="checkbox" id="anu_vac" class="custom-control-input anu_vac"/>
+                        <label for="anu_vac" class="custom-control-label">Anular Vacaciones.</label>
+                    </div>
                 </div>
                 <div class="c_elemento custom-checkbox custom-control">
-                <div class="custom-checkbox custom-control">
-                    <input type="checkbox" id="ins_vac" class="custom-control-input">
-                    <label for="ins_vac" class="custom-control-label">Insertar Vacaciones.</label>
-                </div>
-                <div class="custom-checkbox custom-control">
-                    <input type="checkbox" id="ges_vac" class="custom-control-input">
-                    <label for="ges_vac" class="custom-control-label">Gestionar Vacaciones.</label>
-                </div>
-                <div class="custom-checkbox custom-control">
-                    <input type="checkbox" id="anu_vac" class="custom-control-input">
-                    <label for="anu_vac" class="custom-control-label">Anular Vacaciones.</label>
-                </div>
-                
-                </div>
-                <div class="c_elemento custom-checkbox custom-control">
-                    <input type="checkbox" id="reportes" class="custom-control-input">
+                    <input type="checkbox" id="reportes" class="custom-control-input reportes"/>
                     <label for="reportes" class="custom-control-label">Reportes.</label>
                 </div>
             </div>
