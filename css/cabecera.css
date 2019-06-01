@@ -27,3 +27,8 @@
     font-size: 1.2em;
     font-weight: bold;
 }
+
+#cabecera > #logo{
+    padding-right: 25px;
+    position: relative;
+}

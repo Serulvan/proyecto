@@ -1,5 +1,5 @@
 .logo{
-    flex: 1;
+    flex: 0;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -8,10 +8,15 @@
 
 img{
     object-fit: scale-down;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: calc(400px - 135px);
+    max-width: 400px;
 }
 
 #entrar{
     width: 100%;
+}
+
+#subcaja{
+    display: flex;
+    flex-direction: column;
 }

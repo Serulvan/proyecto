@@ -32,14 +32,20 @@
         <title>menu</title>
         <link href="css/menu.css" rel="stylesheet" type="text/css"/>
         <link href="css/logo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fontawesome-free-5.8.2-all.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cabecera.css" rel="stylesheet" type="text/css"/>
         <!--<link href="css/00_marcos.css" rel="stylesheet" type="text/css"/>-->
         
         <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
         <script src="js/funcionesSubMenu.js" type="text/javascript"></script>
+        <script src="js/cabecera.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="caja">
-            <div id="logo">Proyecto</div>
+            <div id="minicabecera">
+                <div id="atras"><i class="fas fa-arrow-left fa-lg"></i></div>
+                <div id="logo">Proyecto</div>
+            </div>
             <div class="submenu menu-general alter">
                 <?=$al_us?>
                 <?=$ba_us?>

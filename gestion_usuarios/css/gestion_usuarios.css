@@ -1,6 +1,24 @@
 #form_gest_usu{
-    max-height: 600px;
+    flex: 1;
     overflow-y: auto;
     padding-top: 0px;
     margin-top: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.full{
+    flex: 1;
+}
+
+.a_derecha{
+    justify-content: flex-end;
+}
+
+#insercion_pie{
+    display: none;
+}
+
+input[type=text]{
+    text-transform: uppercase;
 }

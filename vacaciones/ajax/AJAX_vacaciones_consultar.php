@@ -7,7 +7,7 @@ $login = filter_input(INPUT_POST, "login");
 $fecha = filter_input(INPUT_POST, "fecha");
 $tipo = filter_input(INPUT_POST, "tipo");
 $and = "";
-if ($login!==null) {
+if ($login!=null && $login!="") {
     $and = "AND vs.login = '$login'";
 }
 switch ($tipo) {

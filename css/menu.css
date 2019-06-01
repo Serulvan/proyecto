@@ -12,44 +12,53 @@ body{
 .caja{
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 15px;
+    border-radius: 3px;
+    padding: 75px;
+    position: relative;
+}
+
+#minicabecera{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    right: 20px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    flex-direction: column;
     width: 400px;
     max-width: 400px;
     height: 400px;
     max-height: 400px;
-    box-shadow: 0 0 15px;
-    border-radius: 3px;
-    padding: 25px;
-}
-
-.menu{
-    flex-direction: column;
 }
 
 .submenu{
     flex-direction: row;
     flex-wrap: wrap;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    max-height: 400px;
 }
 
 .menu-general{
-    flex: 1;
     display: flex;
     overflow: auto;
 }
-
-.menu-elemento{
-    height: 100%;
-}
-
-.submenu-elemento{
-    height: 23.5%;
+.submenu-elemento.menu-elemento-general{
+    width: 94px;
 }
 
 .menu-elemento-general{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 0 0 23.5%;
-    margin: 0.7%;
+    margin: 3px;
+    height: 94px;
 }
 
 .menu-elemento-animacion{
@@ -129,7 +138,6 @@ body{
     background: gray !important;
 }
 
-
 .submenu.menu-general.alter .submenu-elemento:nth-child(8n-7){
     background-color: midnightblue;
 }
@@ -154,3 +162,4 @@ body{
 .submenu.menu-general.alter .submenu-elemento:nth-child(8n-0){
     background-color: goldenrod;
 }
+

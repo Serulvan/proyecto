@@ -124,6 +124,7 @@ function comprobar_fecha(login, f_ini, f_fin) {
 
 function consultar_vacaciones(){
     var login = $("#almacenar").data("usuario");
+    console.log(login);
     var fecha = $("#year").val();
     var tipo = $("#tipo").val();
     $.ajax({

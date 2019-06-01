@@ -7,6 +7,13 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
     header("location: /proyecto/index.php", true);
 }
 
+/*
+  $_SESSION["insertar_vac"]
+  $_SESSION["gestionar_vac"]
+  $_SESSION["anular_vac"]
+  $_SESSION["reportes"]
+ */
+
 $link = conexion();
 $arr_usuarios = lanzar_query(select_usuarios(), $link, MYSQLI_ASSOC);
 $opc_usuarios = "";

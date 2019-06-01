@@ -11,7 +11,7 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>vacaciones</title>
+        <title>Gestion USUARIOS</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/fontawesome-free-5.8.2-all.min.css" rel="stylesheet" type="text/css"/>
@@ -25,6 +25,7 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
         <script src="../js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="../js/moment.min.js" type="text/javascript"></script>
+        <script src="../js/funciones_fechas.js" type="text/javascript"></script>
         <script src="../js/cabecera.js" type="text/javascript"></script>
         <script src="../js/funciones_generales.js" type="text/javascript"></script>
         <script src="js/gestion_usuarios.js" type="text/javascript"></script>
@@ -35,7 +36,7 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
         <div id="cabecera">
             <div id="atras"><i class="fas fa-arrow-left fa-lg"></i></div>
             <div id="usuario"><?= $_SESSION["user"] ?></div>
-            <div id="titulo">Gestionar Vacaciones.</div>
+            <div id="titulo">Gestionar Usuarios.</div>
             <div id="logo">Proyecto</div>
         </div>
         <div class="separador_horizontal"></div><!------------------------------------------------------------------->
@@ -43,9 +44,14 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
             <div class="titulo">
                 Inserción de usuarios.
             </div>
-            <div class="c_elemento">
-                <label for="pegado_especial">Pega aquí los usuarios desde una hoja de calculo de Microsoft Excel<sup>&copy;</sup>.</label>
-                <textarea id="pegado_especial" class="form-control"></textarea>
+            <div class="controles">
+                <div class="c_elemento full">
+                    <label for="pegado_especial">Pega aquí los datos desde una hoja de calculo de Microsoft Excel<sup>&copy;</sup> sin la cabecera.</label>
+                    <textarea id="pegado_especial" class="form-control"></textarea>
+                </div>
+                <div class="c_elemento">
+                    <button class="btn btn-outline-success mybutt almacenar">Almacenar</button>
+                </div>
             </div>
         </div>
         <div class="separador_horizontal"></div><!------------------------------------------------------------------->
@@ -53,31 +59,31 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
             <div class="controles">
                 <div class="c_elemento">
                     <label for="login">Login.</label>
-                    <input type="text" id="login" class="form-control login"/>
+                    <input type="text" id="login" class="form-control login texto"/>
                 </div>
                 <div class="c_elemento">
                     <label for="nombre">Nombre.</label>
-                    <input type="text" id="nombre" class="form-control nombre"/>
+                    <input type="text" id="nombre" class="form-control nombre texto"/>
                 </div>
                 <div class="c_elemento">
                     <label for="apellidos">Apellidos.</label>
-                    <input type="text" id="apellidos" class="form-control apellidos"/>
+                    <input type="text" id="apellidos" class="form-control apellidos texto"/>
                 </div>
                 <div class="c_elemento">
                     <label for="categoria">Categoría.</label>
-                    <input id="categoria" class="form-control categoria"/>
+                    <input type="text" id="categoria" class="form-control categoria texto"/>
                 </div>
                 <div class="c_elemento">
                     <label for="departamento">Departamento.</label>
-                    <input type="text" id="departamento" class="form-control departamento"/>
-                </div>
+                    <input type="text" id="departamento" class="form-control departamento texto"/>
+                </div> 
                 <div class="c_elemento">
                     <label for="fecha_ant">Fecha de Antigüedad.</label>
-                    <input type="date" id="fecha_ant" class="form-control fecha_ant"/>
+                    <input type="date" id="fecha_ant" class="form-control fecha_ant texto"/>
                 </div>
                 <div class="c_elemento">
                     <label for="turno">Turno.</label>
-                    <input type="text" id="turno" class="form-control turno"/>
+                    <input type="text" id="turno" class="form-control turno texto"/>
                 </div>
                 <div class="c_elemento">
                     <div class="custom-checkbox custom-control">
@@ -96,6 +102,16 @@ if (!isset($_SESSION["login_true"]) || $_SESSION["login_true"] == false) {
                 <div class="c_elemento custom-checkbox custom-control">
                     <input type="checkbox" id="reportes" class="custom-control-input reportes"/>
                     <label for="reportes" class="custom-control-label">Reportes.</label>
+                </div>
+            </div>
+        </div>
+        <div id="insercion_pie">
+            <div class="separador_horizontal"></div><!------------------------------------------------------------------->
+            <div class="bloque">
+                <div class="controles a_derecha">
+                    <div class="c_elemento">
+                        <button class="btn btn-outline-success mybutt almacenar">Almacenar</button>
+                    </div>
                 </div>
             </div>
         </div>
