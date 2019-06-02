@@ -39,6 +39,7 @@
         <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
         <script src="js/funcionesSubMenu.js" type="text/javascript"></script>
         <script src="js/cabecera.js" type="text/javascript"></script>
+        <script src="js/logo_colegio.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="caja">
@@ -50,7 +51,9 @@
                 <?=$al_us?>
                 <?=$ba_us?>
             </div>
-            
+            <div id="minipie">
+                <img id="logocolegio" src="img/virgen_de_la_paz_logo.png" alt=""/>
+            </div>
         </div>
     </body>
 </html>

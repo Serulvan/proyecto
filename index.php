@@ -16,6 +16,7 @@ $_SESSION["url_base"] = filter_input(INPUT_SERVER, 'SERVER_NAME') . filter_input
 
         <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
         <script src="js/funcionesIndex.js" type="text/javascript"></script>
+        <script src="js/logo_colegio.js" type="text/javascript"></script>
         <!--<link href="css/00_marcos.css" rel="stylesheet" type="text/css"/>-->
     </head>
     <body>
@@ -33,6 +34,9 @@ $_SESSION["url_base"] = filter_input(INPUT_SERVER, 'SERVER_NAME') . filter_input
                 <div class=" ">
                     <input id="entrar" class="btn btn-outline-dark" type="submit" value="ENTRAR"/>
                 </div>
+            </div>
+            <div id="minipie">
+                <img id="logocolegio" src="img/virgen_de_la_paz_logo.png" alt=""/>
             </div>
         </form>
     </body>

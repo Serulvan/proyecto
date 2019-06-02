@@ -57,6 +57,7 @@ function reset() {
     $("#usuarios").val("").selectpicker("refresh");
     semireset();
     gestionar_almacenar(false);
+    $("#almacenar").data("usuario", $("#usuarios").val());
 }
 
 function almacenar() {
@@ -146,7 +147,9 @@ function consultar_vacaciones(){
                         $(".borrar:last").data("data",data[i]);
                     }
                     if (!isEmpty(login)) {
-                        $(".col_login").css("display", "none");
+                        $(".col_login").hide();
+                    }else{
+                        $(".col_login").show();
                     }
                     borrar();
                     $(".consulta").show();

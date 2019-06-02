@@ -50,6 +50,7 @@ if ($_SESSION["gestionar_vac"]) {
         <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
         <script src="js/funcionesSubMenu.js" type="text/javascript"></script>
         <script src="js/cabecera.js" type="text/javascript"></script>
+        <script src="js/logo_colegio.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="caja">
@@ -61,6 +62,9 @@ if ($_SESSION["gestionar_vac"]) {
                 <?= $vacac ?>
                 <?= $in_va ?>
                 <?= $ge_va ?>
+            </div>
+            <div id="minipie">
+                <img id="logocolegio" src="img/virgen_de_la_paz_logo.png" alt=""/>
             </div>
         </div>
     </body>

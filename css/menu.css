@@ -28,6 +28,21 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+#minipie{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+#logocolegio{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
 .menu{
     flex-direction: column;
     width: 400px;
