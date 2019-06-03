@@ -91,7 +91,8 @@ AND vs.fecha_solicitud = vg.fecha_solicitud
 AND vs.fecha_ini = vg.fecha_ini 
 AND vs.fecha_fin = vg.fecha_fin 
 LEFT JOIN trabajadores t
-ON t.login = vs.login) AS a
+ON t.login = vs.login
+WHERE t.activo = 1) AS a
 WHERE 1
 $and
 ORDER BY fecha_antiguedad ASC, fecha_ini DESC";

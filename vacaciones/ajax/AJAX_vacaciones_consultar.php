@@ -29,6 +29,9 @@ ON vs.login = vg.login
 AND vs.fecha_solicitud = vg.fecha_solicitud 
 AND vs.fecha_ini = vg.fecha_ini 
 AND vs.fecha_fin = vg.fecha_fin 
+JOIN trabajadores t
+ON t.login = vs.login
+AND t.activo = 1
 WHERE '$fecha' = year(vs.fecha_ini)
 $and";
 $link = conexion();
